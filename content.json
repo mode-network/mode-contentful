@@ -11,93 +11,10 @@
           "id": "sgg539jn1u5u"
         }
       },
-      "id": "2YELjpyADAm05SfcBTmum",
-      "type": "Entry",
-      "createdAt": "2024-02-13T19:37:32.582Z",
-      "updatedAt": "2024-02-14T08:46:11.462Z",
-      "environment": {
-        "sys": {
-          "id": "master",
-          "type": "Link",
-          "linkType": "Environment"
-        }
-      },
-      "revision": 2,
-      "contentType": {
-        "sys": {
-          "type": "Link",
-          "linkType": "ContentType",
-          "id": "ecosystem"
-        }
-      },
-      "locale": "en-US"
-    },
-    "fields": {
-      "name": "Logx",
-      "dappImage": {
-        "metadata": {
-          "tags": []
-        },
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "sgg539jn1u5u"
-            }
-          },
-          "id": "23zsEWInw9X8ysQnHNvbEa",
-          "type": "Asset",
-          "createdAt": "2024-02-13T19:35:14.270Z",
-          "updatedAt": "2024-02-13T19:35:14.270Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "revision": 1,
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "logx-logo-image",
-          "description": "",
-          "file": {
-            "url": "//images.ctfassets.net/sgg539jn1u5u/23zsEWInw9X8ysQnHNvbEa/edb69bd84e28e2ac24a797ca662b8507/logx.svg",
-            "details": {
-              "size": 4298164,
-              "image": {
-                "width": 151,
-                "height": 36
-              }
-            },
-            "fileName": "logx.svg",
-            "contentType": "image/svg+xml"
-          }
-        }
-      },
-      "link": "https://www.logx.trade/",
-      "shortDescription": "A perpetuals exchange to trade with leverage on BTC and ETH.",
-      "pointsStatus": "Tracking is live and points and will be updated in the next 14 days"
-    }
-  },
-  {
-    "metadata": {
-      "tags": []
-    },
-    "sys": {
-      "space": {
-        "sys": {
-          "type": "Link",
-          "linkType": "Space",
-          "id": "sgg539jn1u5u"
-        }
-      },
       "id": "7p2jQrqoeBQw02QhZ9zh1a",
       "type": "Entry",
       "createdAt": "2024-02-13T19:52:19.963Z",
-      "updatedAt": "2024-02-13T19:52:19.963Z",
+      "updatedAt": "2024-03-01T01:46:05.122Z",
       "environment": {
         "sys": {
           "id": "master",
@@ -105,7 +22,7 @@
           "linkType": "Environment"
         }
       },
-      "revision": 1,
+      "revision": 12,
       "contentType": {
         "sys": {
           "type": "Link",
@@ -116,7 +33,8 @@
       "locale": "en-US"
     },
     "fields": {
-      "name": "Mode Domains",
+      "name": "Mode NS",
+      "id": 5,
       "dappImage": {
         "metadata": {
           "tags": []
@@ -162,7 +80,10 @@
       },
       "link": "https://space.id/tld/6",
       "shortDescription": "Get your .mode domain name.",
-      "pointsStatus": "Tracking is live and updated every Wednesday"
+      "pointsStatus": "Tracking is live and will be updated every Wednesday",
+      "brandColor": "#DFFD00",
+      "order": 1,
+      "textColor": "#030303"
     }
   },
   {
@@ -180,7 +101,7 @@
       "id": "6avl0XH8wGuBUXyzfRYbOL",
       "type": "Entry",
       "createdAt": "2024-02-13T19:49:05.437Z",
-      "updatedAt": "2024-02-13T19:49:05.437Z",
+      "updatedAt": "2024-02-28T23:40:48.043Z",
       "environment": {
         "sys": {
           "id": "master",
@@ -188,7 +109,7 @@
           "linkType": "Environment"
         }
       },
-      "revision": 1,
+      "revision": 7,
       "contentType": {
         "sys": {
           "type": "Link",
@@ -199,7 +120,8 @@
       "locale": "en-US"
     },
     "fields": {
-      "name": "Kim",
+      "name": "Kim Exchange",
+      "id": 4,
       "dappImage": {
         "metadata": {
           "tags": []
@@ -245,7 +167,9 @@
       },
       "link": "https://kim.exchange/",
       "shortDescription": "A decentralized exchange native to Mode. Swap tokens quickly and easily.",
-      "pointsStatus": "Tracking is live and updated every Wednesday"
+      "pointsStatus": "Tracking is live and updated every Wednesday",
+      "brandColor": "#FF4500",
+      "order": 2
     }
   },
   {
@@ -263,7 +187,7 @@
       "id": "nhJsr4EtvKAXPhSUIDOzT",
       "type": "Entry",
       "createdAt": "2024-02-13T19:48:11.445Z",
-      "updatedAt": "2024-02-13T19:48:11.445Z",
+      "updatedAt": "2024-02-28T23:40:58.249Z",
       "environment": {
         "sys": {
           "id": "master",
@@ -271,7 +195,7 @@
           "linkType": "Environment"
         }
       },
-      "revision": 1,
+      "revision": 8,
       "contentType": {
         "sys": {
           "type": "Link",
@@ -283,6 +207,7 @@
     },
     "fields": {
       "name": "Ionic",
+      "id": 6,
       "dappImage": {
         "metadata": {
           "tags": []
@@ -328,90 +253,8 @@
       },
       "link": "https://ionic.money/",
       "shortDescription": "The first lending and borrowing protocol on Mode.",
-      "pointsStatus": "Tracking is live and points will be updated in the next 14 days"
-    }
-  },
-  {
-    "metadata": {
-      "tags": []
-    },
-    "sys": {
-      "space": {
-        "sys": {
-          "type": "Link",
-          "linkType": "Space",
-          "id": "sgg539jn1u5u"
-        }
-      },
-      "id": "6ZOAuFLj0i2le6J7puzSxJ",
-      "type": "Entry",
-      "createdAt": "2024-02-13T19:46:57.720Z",
-      "updatedAt": "2024-02-13T19:46:57.720Z",
-      "environment": {
-        "sys": {
-          "id": "master",
-          "type": "Link",
-          "linkType": "Environment"
-        }
-      },
-      "revision": 1,
-      "contentType": {
-        "sys": {
-          "type": "Link",
-          "linkType": "ContentType",
-          "id": "ecosystem"
-        }
-      },
-      "locale": "en-US"
-    },
-    "fields": {
-      "name": "Poolshark",
-      "dappImage": {
-        "metadata": {
-          "tags": []
-        },
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "sgg539jn1u5u"
-            }
-          },
-          "id": "5BAMtpTJ5V2Awmt8QTQ4Sf",
-          "type": "Asset",
-          "createdAt": "2024-02-13T19:46:21.417Z",
-          "updatedAt": "2024-02-13T19:46:21.417Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "revision": 1,
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "poolshark-logo",
-          "description": "",
-          "file": {
-            "url": "//images.ctfassets.net/sgg539jn1u5u/5BAMtpTJ5V2Awmt8QTQ4Sf/b22c2debe5af56b89f1840f5831e14ce/poolshark.svg",
-            "details": {
-              "size": 2022899,
-              "image": {
-                "width": 176,
-                "height": 44
-              }
-            },
-            "fileName": "poolshark.svg",
-            "contentType": "image/svg+xml"
-          }
-        }
-      },
-      "link": "https://www.poolshark.fi/",
-      "shortDescription": "A decentralized exchange to create directional liquidity positions.",
-      "pointsStatus": "Tracking is live and points will be updated in the next 14 days."
+      "pointsStatus": "Tracking is live and points are updated every Wednesday",
+      "order": 3
     }
   },
   {
@@ -429,7 +272,7 @@
       "id": "3XyIdH4AshWzhn1dCWfTjI",
       "type": "Entry",
       "createdAt": "2024-02-13T19:45:49.034Z",
-      "updatedAt": "2024-02-13T19:45:49.034Z",
+      "updatedAt": "2024-02-28T23:38:35.948Z",
       "environment": {
         "sys": {
           "id": "master",
@@ -437,7 +280,7 @@
           "linkType": "Environment"
         }
       },
-      "revision": 1,
+      "revision": 5,
       "contentType": {
         "sys": {
           "type": "Link",
@@ -449,6 +292,7 @@
     },
     "fields": {
       "name": "Sup Swap",
+      "id": 2,
       "dappImage": {
         "metadata": {
           "tags": []
@@ -494,7 +338,439 @@
       },
       "link": "https://supswap.xyz/",
       "shortDescription": "A decentralized exchange for concentrated liquidity native on Mode.",
-      "pointsStatus": "Tracking is live and updated every Wednesday"
+      "pointsStatus": "Tracking is live and updated every Wednesday",
+      "brandColor": "#2432f4",
+      "order": 4
+    }
+  },
+  {
+    "metadata": {
+      "tags": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "sgg539jn1u5u"
+        }
+      },
+      "id": "2YELjpyADAm05SfcBTmum",
+      "type": "Entry",
+      "createdAt": "2024-02-13T19:37:32.582Z",
+      "updatedAt": "2024-02-28T23:41:22.308Z",
+      "environment": {
+        "sys": {
+          "id": "master",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "revision": 9,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "ecosystem"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "name": "Logx",
+      "id": 1,
+      "dappImage": {
+        "metadata": {
+          "tags": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "sgg539jn1u5u"
+            }
+          },
+          "id": "23zsEWInw9X8ysQnHNvbEa",
+          "type": "Asset",
+          "createdAt": "2024-02-13T19:35:14.270Z",
+          "updatedAt": "2024-02-13T19:35:14.270Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "logx-logo-image",
+          "description": "",
+          "file": {
+            "url": "//images.ctfassets.net/sgg539jn1u5u/23zsEWInw9X8ysQnHNvbEa/edb69bd84e28e2ac24a797ca662b8507/logx.svg",
+            "details": {
+              "size": 4298164,
+              "image": {
+                "width": 151,
+                "height": 36
+              }
+            },
+            "fileName": "logx.svg",
+            "contentType": "image/svg+xml"
+          }
+        }
+      },
+      "link": "https://www.logx.trade/",
+      "shortDescription": "A perpetuals exchange to trade with leverage on BTC and ETH.",
+      "pointsStatus": "Tracking is live and points and will be updated in the next 7 days",
+      "order": 5
+    }
+  },
+  {
+    "metadata": {
+      "tags": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "sgg539jn1u5u"
+        }
+      },
+      "id": "6ZOAuFLj0i2le6J7puzSxJ",
+      "type": "Entry",
+      "createdAt": "2024-02-13T19:46:57.720Z",
+      "updatedAt": "2024-02-28T23:41:31.823Z",
+      "environment": {
+        "sys": {
+          "id": "master",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "revision": 8,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "ecosystem"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "name": "Poolshark",
+      "id": 3,
+      "dappImage": {
+        "metadata": {
+          "tags": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "sgg539jn1u5u"
+            }
+          },
+          "id": "5BAMtpTJ5V2Awmt8QTQ4Sf",
+          "type": "Asset",
+          "createdAt": "2024-02-13T19:46:21.417Z",
+          "updatedAt": "2024-02-13T19:46:21.417Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "poolshark-logo",
+          "description": "",
+          "file": {
+            "url": "//images.ctfassets.net/sgg539jn1u5u/5BAMtpTJ5V2Awmt8QTQ4Sf/b22c2debe5af56b89f1840f5831e14ce/poolshark.svg",
+            "details": {
+              "size": 2022899,
+              "image": {
+                "width": 176,
+                "height": 44
+              }
+            },
+            "fileName": "poolshark.svg",
+            "contentType": "image/svg+xml"
+          }
+        }
+      },
+      "link": "https://www.poolshark.fi/",
+      "shortDescription": "A decentralized exchange to create directional liquidity positions.",
+      "pointsStatus": "Tracking is live and points will be updated in the next 7 days.",
+      "brandColor": "#007AFF",
+      "order": 6
+    }
+  },
+  {
+    "metadata": {
+      "tags": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "sgg539jn1u5u"
+        }
+      },
+      "id": "49VdgxfPtqjWofyfswYMkO",
+      "type": "Entry",
+      "createdAt": "2024-02-27T16:09:38.024Z",
+      "updatedAt": "2024-02-29T17:41:44.685Z",
+      "environment": {
+        "sys": {
+          "id": "master",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "revision": 8,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "ecosystem"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "name": "LayerBank",
+      "id": 7,
+      "dappImage": {
+        "metadata": {
+          "tags": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "sgg539jn1u5u"
+            }
+          },
+          "id": "1MUO6jKj6RxdoocXYPaHaF",
+          "type": "Asset",
+          "createdAt": "2024-02-27T16:09:25.000Z",
+          "updatedAt": "2024-02-27T16:09:25.000Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "layerbank",
+          "description": "",
+          "file": {
+            "url": "//images.ctfassets.net/sgg539jn1u5u/1MUO6jKj6RxdoocXYPaHaF/da9d3404b6d399d309a4074f958a12a2/layerbank.svg",
+            "details": {
+              "size": 6489,
+              "image": {
+                "width": 175,
+                "height": 28
+              }
+            },
+            "fileName": "layerbank.svg",
+            "contentType": "image/svg+xml"
+          }
+        }
+      },
+      "link": "https://mode.layerbank.finance/bank",
+      "shortDescription": "A universal permissionless on-chain bank.",
+      "pointsStatus": "Tracking is live and points will be updated in the next 7 days",
+      "order": 7
+    }
+  },
+  {
+    "metadata": {
+      "tags": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "sgg539jn1u5u"
+        }
+      },
+      "id": "5FzZFD28Hzi9NhFvw75PMm",
+      "type": "Entry",
+      "createdAt": "2024-02-29T18:03:20.983Z",
+      "updatedAt": "2024-02-29T19:11:35.539Z",
+      "environment": {
+        "sys": {
+          "id": "master",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "revision": 2,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "ecosystem"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "name": "Ironclad",
+      "id": 8,
+      "dappImage": {
+        "metadata": {
+          "tags": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "sgg539jn1u5u"
+            }
+          },
+          "id": "3BG5bmgOq5pLjIzsKTjPxv",
+          "type": "Asset",
+          "createdAt": "2024-02-28T17:10:45.704Z",
+          "updatedAt": "2024-02-28T17:10:45.704Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "Ironclad",
+          "description": "",
+          "file": {
+            "url": "//images.ctfassets.net/sgg539jn1u5u/3BG5bmgOq5pLjIzsKTjPxv/c553f800a8e85d4aad0e077ffdc5de5b/Ironclad.svg",
+            "details": {
+              "size": 3451,
+              "image": {
+                "width": 185,
+                "height": 17
+              }
+            },
+            "fileName": "Ironclad.svg",
+            "contentType": "image/svg+xml"
+          }
+        }
+      },
+      "link": "https://www.ironclad.finance/",
+      "shortDescription": "Decentralized Lending Market",
+      "pointsStatus": "Tracking is live and points will be updated in the next 14 days",
+      "brandColor": "#000000",
+      "order": 8,
+      "textColor": "#FFFFFF"
+    }
+  },
+  {
+    "metadata": {
+      "tags": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "sgg539jn1u5u"
+        }
+      },
+      "id": "vlHLxS5zNaUYqOdpo6n1O",
+      "type": "Entry",
+      "createdAt": "2024-02-29T18:03:30.845Z",
+      "updatedAt": "2024-03-04T17:41:40.107Z",
+      "environment": {
+        "sys": {
+          "id": "master",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "revision": 3,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "ecosystem"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "name": "Swap Mode",
+      "id": 9,
+      "dappImage": {
+        "metadata": {
+          "tags": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "sgg539jn1u5u"
+            }
+          },
+          "id": "56tsa3np6LoCJQziouK7Se",
+          "type": "Asset",
+          "createdAt": "2024-02-29T16:52:39.769Z",
+          "updatedAt": "2024-02-29T16:52:39.769Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "Mode Swap",
+          "description": "",
+          "file": {
+            "url": "//images.ctfassets.net/sgg539jn1u5u/56tsa3np6LoCJQziouK7Se/cfe36a9357abde857a896e10fecba9ee/swapmode.svg",
+            "details": {
+              "size": 196644,
+              "image": {
+                "width": 201,
+                "height": 34
+              }
+            },
+            "fileName": "swapmode.svg",
+            "contentType": "image/svg+xml"
+          }
+        }
+      },
+      "link": "https://swapmode.fi/",
+      "shortDescription": "The all in one hub for your liquidity",
+      "pointsStatus": "Tracking is live and points will be updated in the next 14 days",
+      "brandColor": "#272727",
+      "order": 9,
+      "textColor": "#FFFFFF"
     }
   }
 ]
