@@ -1,0 +1,453 @@
+[
+  {
+    "metadata": {
+      "tags": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "sgg539jn1u5u"
+        }
+      },
+      "id": "4NmZ0nLqwF6plZPPiSXmY6",
+      "type": "Entry",
+      "createdAt": "2024-03-05T16:22:20.722Z",
+      "updatedAt": "2024-03-08T11:16:50.375Z",
+      "environment": {
+        "sys": {
+          "id": "master",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "revision": 3,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "apps"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "name": "Sup Swap",
+      "id": 4,
+      "logo": {
+        "metadata": {
+          "tags": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "sgg539jn1u5u"
+            }
+          },
+          "id": "1h29ZFaoAjGnVA6C6jXUYo",
+          "type": "Asset",
+          "createdAt": "2024-03-07T15:25:30.943Z",
+          "updatedAt": "2024-03-07T15:25:30.943Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "sup-swap-logo",
+          "description": "",
+          "file": {
+            "url": "//images.ctfassets.net/sgg539jn1u5u/1h29ZFaoAjGnVA6C6jXUYo/533ca97acc4ad730c3bc81e405d1cf10/sup-swap-logo.svg",
+            "details": {
+              "size": 11128,
+              "image": {
+                "width": 119,
+                "height": 40
+              }
+            },
+            "fileName": "sup-swap-logo.svg",
+            "contentType": "image/svg+xml"
+          }
+        }
+      },
+      "brandColor": "#2432f4",
+      "link": "https://supswap.xyz/",
+      "shortDescription": "A decentralized exchange for concentrated liquidity native on Mode.",
+      "isTracking": true,
+      "waysToEarnPoints": [
+        {
+          "link": "/",
+          "title": "Making Transactions",
+          "ownPts": "3X",
+          "modePts": "2X"
+        },
+        {
+          "link": "/",
+          "title": "Providing liquidity",
+          "ownPts": "3X",
+          "modePts": "2X"
+        },
+        {
+          "link": "/",
+          "title": "Supplying for Lending",
+          "ownPts": "3X",
+          "modePts": "2X"
+        }
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "tags": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "sgg539jn1u5u"
+        }
+      },
+      "id": "31y7eoyFrZdXyFD0v5j4LQ",
+      "type": "Entry",
+      "createdAt": "2024-03-07T16:08:49.277Z",
+      "updatedAt": "2024-03-07T16:20:58.334Z",
+      "environment": {
+        "sys": {
+          "id": "master",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "revision": 2,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "apps"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "name": "Standart",
+      "id": 3,
+      "logo": {
+        "metadata": {
+          "tags": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "sgg539jn1u5u"
+            }
+          },
+          "id": "2TtoOEBU7pTEUZsrxI4eXc",
+          "type": "Asset",
+          "createdAt": "2024-03-07T16:12:37.304Z",
+          "updatedAt": "2024-03-07T16:12:37.304Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "standart-logo",
+          "description": "",
+          "file": {
+            "url": "//images.ctfassets.net/sgg539jn1u5u/2TtoOEBU7pTEUZsrxI4eXc/d15c54ac35c10c9597da614fac691f3c/standard-logo.svg",
+            "details": {
+              "size": 7043,
+              "image": {
+                "width": 147,
+                "height": 24
+              }
+            },
+            "fileName": "standard-logo.svg",
+            "contentType": "image/svg+xml"
+          }
+        }
+      },
+      "link": "https://space.id/tld/6",
+      "shortDescription": "It’s a decentralized exchange for swapping BEP20 tokens on Binance Smart Chain.",
+      "isTracking": true,
+      "badges": [
+        {
+          "color": "#F8F8F8",
+          "title": "DEX"
+        },
+        {
+          "color": "#DFFE00",
+          "title": "Mode points"
+        }
+      ],
+      "waysToEarnPoints": [
+        {
+          "link": "/",
+          "title": "Making Transactions",
+          "ownPts": "3X",
+          "modePts": "2X"
+        },
+        {
+          "link": "/",
+          "title": "Providing liquidity",
+          "ownPts": "3X",
+          "modePts": "2X"
+        },
+        {
+          "link": "/",
+          "title": "Supplying for Lending",
+          "ownPts": "3X",
+          "modePts": "2X"
+        }
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "tags": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "sgg539jn1u5u"
+        }
+      },
+      "id": "5nH6Gm0XWfy0FWelkaAgak",
+      "type": "Entry",
+      "createdAt": "2024-03-07T16:06:33.844Z",
+      "updatedAt": "2024-03-07T16:21:13.337Z",
+      "environment": {
+        "sys": {
+          "id": "master",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "revision": 3,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "apps"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "name": "Mode ns",
+      "id": 1,
+      "logo": {
+        "metadata": {
+          "tags": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "sgg539jn1u5u"
+            }
+          },
+          "id": "1GnTTmpv2CqH4ptlYKwRkZ",
+          "type": "Asset",
+          "createdAt": "2024-03-07T16:13:24.942Z",
+          "updatedAt": "2024-03-07T16:13:24.942Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "mode-ns-logo",
+          "description": "",
+          "file": {
+            "url": "//images.ctfassets.net/sgg539jn1u5u/1GnTTmpv2CqH4ptlYKwRkZ/21b858400384cb24a97fcc7405484779/mode-ns-logo.svg",
+            "details": {
+              "size": 8964,
+              "image": {
+                "width": 151,
+                "height": 61
+              }
+            },
+            "fileName": "mode-ns-logo.svg",
+            "contentType": "image/svg+xml"
+          }
+        }
+      },
+      "link": "https://space.id/tld/6",
+      "shortDescription": "It’s a decentralized exchange for swapping BEP20 tokens on Binance Smart Chain.",
+      "isTracking": true,
+      "badges": [
+        {
+          "color": "#F8F8F8",
+          "title": "DEX"
+        },
+        {
+          "color": "#DFFE00",
+          "title": "Mode points"
+        }
+      ],
+      "waysToEarnPoints": [
+        {
+          "link": "/",
+          "title": "Making Transactions",
+          "ownPts": "3X",
+          "modePts": "2X"
+        },
+        {
+          "link": "/",
+          "title": "Providing liquidity",
+          "ownPts": "3X",
+          "modePts": "2X"
+        },
+        {
+          "link": "/",
+          "title": "Supplying for Lending",
+          "ownPts": "3X",
+          "modePts": "2X"
+        }
+      ]
+    }
+  },
+  {
+    "metadata": {
+      "tags": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "sgg539jn1u5u"
+        }
+      },
+      "id": "5u9YXdb8nBmskhH6rrE7WO",
+      "type": "Entry",
+      "createdAt": "2024-03-05T12:51:14.372Z",
+      "updatedAt": "2024-03-07T16:21:31.299Z",
+      "environment": {
+        "sys": {
+          "id": "master",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "revision": 6,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "apps"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "name": "Kim Exchange",
+      "id": 2,
+      "logo": {
+        "metadata": {
+          "tags": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "sgg539jn1u5u"
+            }
+          },
+          "id": "4zIjJWfZOOuC5otAgf05pU",
+          "type": "Asset",
+          "createdAt": "2024-03-07T15:26:22.453Z",
+          "updatedAt": "2024-03-07T16:11:19.171Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 6,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "kim-exchange-logo",
+          "description": "",
+          "file": {
+            "url": "//images.ctfassets.net/sgg539jn1u5u/4zIjJWfZOOuC5otAgf05pU/89f99835fe9cd18c436a7d6d7854edf5/kim-exchange-logo.svg",
+            "details": {
+              "size": 6059,
+              "image": {
+                "width": 151,
+                "height": 60
+              }
+            },
+            "fileName": "kim-exchange-logo.svg",
+            "contentType": "image/svg+xml"
+          }
+        }
+      },
+      "link": "https://kim.exchange/",
+      "shortDescription": "It’s a decentralized exchange for swapping BEP20 tokens on Binance Smart Chain.",
+      "isTracking": true,
+      "badges": [
+        {
+          "color": "#F8F8F8",
+          "title": "DEX"
+        },
+        {
+          "color": "#DFFE00",
+          "title": "Mode points"
+        },
+        {
+          "color": "#00B2EE",
+          "title": "Kim points"
+        }
+      ],
+      "waysToEarnPoints": [
+        {
+          "link": "/",
+          "title": "Making Transactions",
+          "ownPts": "3X",
+          "modePts": "2X"
+        },
+        {
+          "link": "/",
+          "title": "Providing liquidity",
+          "ownPts": "3X",
+          "modePts": "2X"
+        },
+        {
+          "link": "/",
+          "title": "Supplying for Lending",
+          "ownPts": "3X",
+          "modePts": "2X"
+        }
+      ]
+    }
+  }
+]
