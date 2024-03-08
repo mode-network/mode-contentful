@@ -30,6 +30,7 @@ type Badge = {
 type WayToEarnPoints = {
     link?: string;
     title?: string;
+    shortDescription?: string;
     modePts?: string;
     ownPts?: string;
 }
