@@ -22,17 +22,29 @@ type AppImage = {
   };
 };
 
+type Badge = {
+    title: string;
+    color: string;
+}
+
+type WayToEarnPoints = {
+    link?: string;
+    title?: string;
+    modePts?: string;
+    ownPts?: string;
+}
+
 type Entry = {
   // we don't care about `metadata` and `sys` field for now
   fields: {
       name: string;
-      dappImage: AppImage;
+      id: number;
+      logo: AppImage;
+      brandColor?: string;
       link: string;
       shortDescription: string;
-      pointsStatus: string;
-      brandColor?: string;
-      textColor?: string;
-      id: number;
+      badges?: Badge[];
+      waysToEarnPoints: WayToEarnPoints;
   };
 };
 
@@ -55,29 +67,30 @@ const client = createClient({
     accessToken: process.env.CONTENTFUL_TOKEN,
 });
 
-export async function getSortedEcosystemApps() {
+export async function getSortedEcosystemApps(contentType: string) {
     // @ts-ignore
     const order = (await client.getEntries({
         content_type: 'ecosystemOrder',
     })).items[0] as Order;
     // @ts-ignore
     const entries = (await client.getEntries({
-        content_type: 'ecosystem',
+        content_type: contentType,
     })) as {items: Entry[]}
     if (entries.items && order) return entries.items.sort((a, b) => {
       return order.fields.order.order.indexOf(a.fields.id) - order.fields.order.order.indexOf(b.fields.id);
   });
 };
 
-const fetchEntriesAndWriteToFile = async () => {
+const fetchEntriesAndWriteToFile = async (contentType: string, fileName: string) => {
     try {
-      const entries = await getSortedEcosystemApps();
-      fs.writeFileSync('content.json', JSON.stringify(entries, null, 2));
+      const entries = await getSortedEcosystemApps(contentType);
+      fs.writeFileSync(`${fileName}.json`, JSON.stringify(entries, null, 2));
   
-      console.log('Entries successfully written to content.json');
+      console.log(`Entries successfully written to ${fileName}.json`);
     } catch (error) {
       console.error('Error fetching entries:', error);
     }
   };
 
-fetchEntriesAndWriteToFile();
+fetchEntriesAndWriteToFile('ecosystem', 'content'); // TODO: remove once we fully rely on Apps model
+fetchEntriesAndWriteToFile('apps', 'apps');
