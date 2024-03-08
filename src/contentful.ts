@@ -43,6 +43,7 @@ type Entry = {
       brandColor?: string;
       link: string;
       shortDescription: string;
+      isPending?: boolean;
       badges?: Badge[];
       waysToEarnPoints: WayToEarnPoints;
   };
