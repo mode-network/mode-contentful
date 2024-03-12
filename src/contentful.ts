@@ -35,7 +35,7 @@ type WayToEarnPoints = {
     ownPts?: string;
 }
 
-type Entry = {
+type App = {
   // we don't care about `metadata` and `sys` field for now
   fields: {
       name: string;
@@ -77,7 +77,7 @@ export async function getSortedEcosystemApps(contentType: string) {
     // @ts-ignore
     const entries = (await client.getEntries({
         content_type: contentType,
-    })) as {items: Entry[]}
+    })) as {items: App[]}
     if (entries.items && order) return entries.items.sort((a, b) => {
       return order.fields.order.order.indexOf(a.fields.id) - order.fields.order.order.indexOf(b.fields.id);
   });
@@ -96,3 +96,4 @@ const fetchEntriesAndWriteToFile = async (contentType: string, fileName: string)
 
 fetchEntriesAndWriteToFile('ecosystem', 'content'); // TODO: remove once we fully rely on Apps model
 fetchEntriesAndWriteToFile('apps', 'apps');
+fetchEntriesAndWriteToFile('restakingBanner', 'restakingBanners');

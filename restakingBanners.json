@@ -1,0 +1,99 @@
+[
+  {
+    "metadata": {
+      "tags": []
+    },
+    "sys": {
+      "space": {
+        "sys": {
+          "type": "Link",
+          "linkType": "Space",
+          "id": "sgg539jn1u5u"
+        }
+      },
+      "id": "7KtMEOOasuzAESekPUv1BE",
+      "type": "Entry",
+      "createdAt": "2024-03-12T11:38:36.714Z",
+      "updatedAt": "2024-03-12T13:28:55.136Z",
+      "environment": {
+        "sys": {
+          "id": "master",
+          "type": "Link",
+          "linkType": "Environment"
+        }
+      },
+      "revision": 2,
+      "contentType": {
+        "sys": {
+          "type": "Link",
+          "linkType": "ContentType",
+          "id": "restakingBanner"
+        }
+      },
+      "locale": "en-US"
+    },
+    "fields": {
+      "name": "Renzo",
+      "id": 1,
+      "logo": {
+        "metadata": {
+          "tags": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "sgg539jn1u5u"
+            }
+          },
+          "id": "12kYhjeWArFYFsX6YB1UBu",
+          "type": "Asset",
+          "createdAt": "2024-03-12T11:35:55.044Z",
+          "updatedAt": "2024-03-12T13:27:30.485Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 4,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "renzo-logo",
+          "file": {
+            "url": "//images.ctfassets.net/sgg539jn1u5u/12kYhjeWArFYFsX6YB1UBu/fff7d73300cc21abc1b7ccd6e22ee618/renzo-logo.svg",
+            "details": {
+              "size": 11336,
+              "image": {
+                "width": 36,
+                "height": 36
+              }
+            },
+            "fileName": "renzo-logo.svg",
+            "contentType": "image/svg+xml"
+          }
+        }
+      },
+      "shortDescription": "Renzo is a Liquid Restaking Token (LRT) and Strategy Manager for EigenLayer. It is the interface to the EigenLayer ecosystem securing Actively Validated Services (AVSs) and offering a higher yield than ETH staking.",
+      "link": "https://www.renzoprotocol.com/",
+      "badges": [
+        {
+          "color": "#00B2EE",
+          "title": "EigenLayer Pts"
+        },
+        {
+          "color": "#00B2EE",
+          "title": "Renzo Pts"
+        },
+        {
+          "color": "#DFFE00",
+          "title": "Mode pts"
+        }
+      ],
+      "restakeLink": "https://app.renzoprotocol.com/restake"
+    }
+  }
+]
