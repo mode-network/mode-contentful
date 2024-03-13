@@ -94,6 +94,6 @@ const fetchEntriesAndWriteToFile = async (contentType: string, fileName: string)
     }
   };
 
-fetchEntriesAndWriteToFile('ecosystem', 'content'); // TODO: remove once we fully rely on Apps model
+fetchEntriesAndWriteToFile('asset', 'assets');
 fetchEntriesAndWriteToFile('apps', 'apps');
 fetchEntriesAndWriteToFile('restakingBanner', 'restakingBanners');
