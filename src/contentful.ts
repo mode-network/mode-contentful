@@ -60,6 +60,8 @@ type Order = {
     };
 }
 
+type ContentType = "asset" | "apps" | "restakingBanner" | "UILocalization";
+
 if (!(process.env.CONTENTFUL_SPACE && process.env.CONTENTFUL_TOKEN)) {
     throw new Error("Contentful configuration isn't full")
 }
@@ -69,7 +71,7 @@ const client = createClient({
     accessToken: process.env.CONTENTFUL_TOKEN,
 });
 
-export async function getSortedEcosystemApps(contentType: string) {
+async function getSortedEcosystemApps(contentType: string) {
     // @ts-ignore
     const order = (await client.getEntries({
         content_type: 'ecosystemOrder',
@@ -83,17 +85,38 @@ export async function getSortedEcosystemApps(contentType: string) {
   });
 };
 
-const fetchEntriesAndWriteToFile = async (contentType: string, fileName: string) => {
+const writeToFile = (data: unknown, fileName: string) => {
+    fs.writeFileSync(`${fileName}.json`, JSON.stringify(data, null, 2));
+}
+
+const fetchEntriesAndWriteToFile = async ({
+      contentType,
+      fileName,
+      withAllLocales,
+  }: {
+      contentType: ContentType,
+      fileName: string,
+      withAllLocales?: boolean,
+  }) => {
     try {
-      const entries = await getSortedEcosystemApps(contentType);
-      fs.writeFileSync(`${fileName}.json`, JSON.stringify(entries, null, 2));
+      if (contentType === "apps") {
+        const sortedApps = await getSortedEcosystemApps(contentType);
+
+        writeToFile(sortedApps, fileName);
+      } else {
+        const entries = withAllLocales ?
+        await client.withAllLocales.getEntries({ content_type: contentType }) :
+        await client.getEntries({ content_type: contentType });
   
+        writeToFile(entries, fileName);
+      }  
       console.log(`Entries successfully written to ${fileName}.json`);
     } catch (error) {
       console.error('Error fetching entries:', error);
     }
   };
 
-fetchEntriesAndWriteToFile('asset', 'assets');
-fetchEntriesAndWriteToFile('apps', 'apps');
-fetchEntriesAndWriteToFile('restakingBanner', 'restakingBanners');
+fetchEntriesAndWriteToFile({ contentType: 'asset', fileName: 'assets' });
+fetchEntriesAndWriteToFile({ contentType: 'apps', fileName: 'apps' });
+fetchEntriesAndWriteToFile({ contentType: 'restakingBanner', fileName: 'restakingBanners' });
+fetchEntriesAndWriteToFile({ contentType: 'UILocalization', fileName: 'UILocalization', withAllLocales: true });
