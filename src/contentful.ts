@@ -60,7 +60,7 @@ type Order = {
     };
 }
 
-type ContentType = "asset" | "apps" | "restakingBanner" | "UILocalization";
+type ContentType = "asset" | "apps" | "restakingBanner" | "UILocalization" | "thirdPartyBridge";
 
 if (!(process.env.CONTENTFUL_SPACE && process.env.CONTENTFUL_TOKEN)) {
     throw new Error("Contentful configuration isn't full")
@@ -120,3 +120,4 @@ fetchEntriesAndWriteToFile({ contentType: 'asset', fileName: 'assets' });
 fetchEntriesAndWriteToFile({ contentType: 'apps', fileName: 'apps' });
 fetchEntriesAndWriteToFile({ contentType: 'restakingBanner', fileName: 'restakingBanners' });
 fetchEntriesAndWriteToFile({ contentType: 'UILocalization', fileName: 'UILocalization', withAllLocales: true });
+fetchEntriesAndWriteToFile({ contentType: 'thirdPartyBridge', fileName: 'thirdPartyBridges'});
