@@ -71,6 +71,7 @@ const client = createClient({
     accessToken: process.env.CONTENTFUL_TOKEN,
 });
 
+// TODO: remove when not used.
 async function getSortedEcosystemApps(contentType: string) {
     // @ts-ignore
     const order = (await client.getEntries({
@@ -78,6 +79,19 @@ async function getSortedEcosystemApps(contentType: string) {
     })).items[0] as Order;
     // @ts-ignore
     const entries = (await client.getEntries({
+        content_type: contentType,
+    })) as {items: App[]}
+    if (entries.items && order) return entries.items.sort((a, b) => {
+      return order.fields.order.order.indexOf(a.fields.id) - order.fields.order.order.indexOf(b.fields.id);
+  });
+};
+async function getSortedEcosystemAppsWithLocales(contentType: string) {
+    // @ts-ignore
+    const order = (await client.getEntries({
+        content_type: 'ecosystemOrder',
+    })).items[0] as Order;
+    // @ts-ignore
+    const entries = (await client.withAllLocales.getEntries({
         content_type: contentType,
     })) as {items: App[]}
     if (entries.items && order) return entries.items.sort((a, b) => {
@@ -100,7 +114,9 @@ const fetchEntriesAndWriteToFile = async ({
   }) => {
     try {
       if (contentType === "apps") {
-        const sortedApps = await getSortedEcosystemApps(contentType);
+        const sortedApps = withAllLocales ?
+        await getSortedEcosystemAppsWithLocales(contentType) :
+        await getSortedEcosystemApps(contentType);
 
         writeToFile(sortedApps, fileName);
       } else {
@@ -117,7 +133,11 @@ const fetchEntriesAndWriteToFile = async ({
   };
 
 fetchEntriesAndWriteToFile({ contentType: 'asset', fileName: 'assets' });
+// TODO: remove when not used
 fetchEntriesAndWriteToFile({ contentType: 'apps', fileName: 'apps' });
 fetchEntriesAndWriteToFile({ contentType: 'restakingBanner', fileName: 'restakingBanners' });
+//
+fetchEntriesAndWriteToFile({ contentType: 'apps', fileName: 'appsWithAllLocales', withAllLocales: true });
+fetchEntriesAndWriteToFile({ contentType: 'restakingBanner', fileName: 'restakingBannersWithAllLocales', withAllLocales: true });
 fetchEntriesAndWriteToFile({ contentType: 'UILocalization', fileName: 'UILocalization', withAllLocales: true });
 fetchEntriesAndWriteToFile({ contentType: 'thirdPartyBridge', fileName: 'thirdPartyBridges'});
