@@ -60,7 +60,7 @@ type Order = {
     };
 }
 
-type ContentType = "asset" | "apps" | "restakingBanner" | "UILocalization" | "thirdPartyBridge" | "points" | "faqItem" | "localizedString";
+type ContentType = "asset" | "apps" | "restakingBanner" | "thirdPartyBridge" | "points" | "faqItem" | "localizedString";
 
 if (!(process.env.CONTENTFUL_SPACE && process.env.CONTENTFUL_TOKEN)) {
     throw new Error("Contentful configuration isn't full")
@@ -133,10 +133,6 @@ const fetchEntriesAndWriteToFile = async ({
   };
 
 fetchEntriesAndWriteToFile({ contentType: 'asset', fileName: 'assets' });
-// TODO: remove when not used
-fetchEntriesAndWriteToFile({ contentType: 'UILocalization', fileName: 'UILocalization', withAllLocales: true });
-fetchEntriesAndWriteToFile({ contentType: 'apps', fileName: 'apps' });
-//
 fetchEntriesAndWriteToFile({ contentType: 'apps', fileName: 'appsWithAllLocales', withAllLocales: true });
 fetchEntriesAndWriteToFile({ contentType: 'restakingBanner', fileName: 'restakingBannersWithAllLocales', withAllLocales: true });
 fetchEntriesAndWriteToFile({ contentType: 'thirdPartyBridge', fileName: 'thirdPartyBridges'});
