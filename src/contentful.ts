@@ -2,6 +2,8 @@ import { createClient } from "contentful";
 import * as fs from 'fs';
 require('dotenv').config();
 
+const baseLocale = "en-US";
+
 type AppImage = {
   // we don't care about `metadata` and `sys` field for now
   fields: {
@@ -39,7 +41,7 @@ type App = {
   // we don't care about `metadata` and `sys` field for now
   fields: {
       name: string;
-      id: number;
+      id: Record<string, number>;
       logo: AppImage;
       brandColor?: string;
       link: string;
@@ -71,20 +73,6 @@ const client = createClient({
     accessToken: process.env.CONTENTFUL_TOKEN,
 });
 
-// TODO: remove when not used.
-async function getSortedEcosystemApps(contentType: string) {
-    // @ts-ignore
-    const order = (await client.getEntries({
-        content_type: 'ecosystemOrder',
-    })).items[0] as Order;
-    // @ts-ignore
-    const entries = (await client.getEntries({
-        content_type: contentType,
-    })) as {items: App[]}
-    if (entries.items && order) return entries.items.sort((a, b) => {
-      return order.fields.order.order.indexOf(a.fields.id) - order.fields.order.order.indexOf(b.fields.id);
-  });
-};
 async function getSortedEcosystemAppsWithLocales(contentType: string) {
     // @ts-ignore
     const order = (await client.getEntries({
@@ -95,7 +83,7 @@ async function getSortedEcosystemAppsWithLocales(contentType: string) {
         content_type: contentType,
     })) as {items: App[]}
     if (entries.items && order) return entries.items.sort((a, b) => {
-      return order.fields.order.order.indexOf(a.fields.id) - order.fields.order.order.indexOf(b.fields.id);
+      return order.fields.order.order.indexOf(a.fields.id[baseLocale]) - order.fields.order.order.indexOf(b.fields.id[baseLocale]);
   });
 };
 
@@ -114,10 +102,7 @@ const fetchEntriesAndWriteToFile = async ({
   }) => {
     try {
       if (contentType === "apps") {
-        const sortedApps = withAllLocales ?
-        await getSortedEcosystemAppsWithLocales(contentType) :
-        await getSortedEcosystemApps(contentType);
-
+        const sortedApps = await getSortedEcosystemAppsWithLocales(contentType);
         writeToFile(sortedApps, fileName);
       } else {
         const entries = withAllLocales ?
