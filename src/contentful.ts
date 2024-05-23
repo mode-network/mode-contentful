@@ -62,8 +62,6 @@ type Order = {
     };
 }
 
-type ContentType = "asset" | "apps" | "restakingBanner" | "thirdPartyBridge" | "points" | "faqItem" | "localizedString";
-
 if (!(process.env.CONTENTFUL_SPACE && process.env.CONTENTFUL_TOKEN)) {
     throw new Error("Contentful configuration isn't full")
 }
@@ -96,7 +94,7 @@ const fetchEntriesAndWriteToFile = async ({
       fileName,
       withAllLocales,
   }: {
-      contentType: ContentType,
+      contentType: string,
       fileName: string,
       withAllLocales?: boolean,
   }) => {
@@ -124,3 +122,4 @@ fetchEntriesAndWriteToFile({ contentType: 'thirdPartyBridge', fileName: 'thirdPa
 fetchEntriesAndWriteToFile({ contentType: 'points', fileName: 'points'});
 fetchEntriesAndWriteToFile({ contentType: 'faqItem', fileName: 'faqItemWithAllLocales', withAllLocales: true });
 fetchEntriesAndWriteToFile({ contentType: 'localizedString', fileName: 'localizedStrings', withAllLocales: true });
+fetchEntriesAndWriteToFile({ contentType: 'news', fileName: 'news', withAllLocales: true });
