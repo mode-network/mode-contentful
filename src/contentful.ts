@@ -123,3 +123,4 @@ fetchEntriesAndWriteToFile({ contentType: 'points', fileName: 'points'});
 fetchEntriesAndWriteToFile({ contentType: 'faqItem', fileName: 'faqItemWithAllLocales', withAllLocales: true });
 fetchEntriesAndWriteToFile({ contentType: 'localizedString', fileName: 'localizedStrings', withAllLocales: true });
 fetchEntriesAndWriteToFile({ contentType: 'news', fileName: 'news', withAllLocales: true });
+fetchEntriesAndWriteToFile({ contentType: 'guides', fileName: 'guides', withAllLocales: true });
