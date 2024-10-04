@@ -135,4 +135,4 @@ fetchEntriesAndWriteToFile({ contentType: "localizedString", fileName: "localize
 fetchEntriesAndWriteToFile({ contentType: "news", fileName: "news", withAllLocales: true });
 fetchEntriesAndWriteToFile({ contentType: "guides", fileName: "guides", withAllLocales: true });
 fetchEntriesAndWriteToFile({ contentType: "seasonalBanners", fileName: "seasonalBanners", withAllLocales: true });
-fetchEntriesAndWriteToFile({ contentType: "ecosystem", fileName: "ecosystem", withAllLocales: true });
+fetchEntriesAndWriteToFile({ contentType: "ecosystemPage", fileName: "ecosystemPage", withAllLocales: true });
