@@ -137,3 +137,4 @@ fetchEntriesAndWriteToFile({ contentType: "guides", fileName: "guides", withAllL
 fetchEntriesAndWriteToFile({ contentType: "seasonalBanners", fileName: "seasonalBanners", withAllLocales: true });
 fetchEntriesAndWriteToFile({ contentType: "ecosystemPage", fileName: "ecosystemPage", withAllLocales: true });
 fetchEntriesAndWriteToFile({ contentType: "categories", fileName: "categories", withAllLocales: true });
+fetchEntriesAndWriteToFile({ contentType: "dappBanner", fileName: "dappBanner", withAllLocales: true });
