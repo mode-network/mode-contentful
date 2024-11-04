@@ -117,7 +117,7 @@ const fetchEntriesAndWriteToFile = async ({
         }
         console.log(`Entries successfully written to ${fileName}.json`);
     } catch (error) {
-        console.error("Error fetching entries:", error);
+        console.error(`Error fetching entries: ${contentType}`, error);
     }
 };
 
@@ -138,3 +138,4 @@ fetchEntriesAndWriteToFile({ contentType: "seasonalBanners", fileName: "seasonal
 fetchEntriesAndWriteToFile({ contentType: "ecosystemPage", fileName: "ecosystemPage", withAllLocales: true });
 fetchEntriesAndWriteToFile({ contentType: "categories", fileName: "categories", withAllLocales: true });
 fetchEntriesAndWriteToFile({ contentType: "dappBanner", fileName: "dappBanner", withAllLocales: true });
+fetchEntriesAndWriteToFile({ contentType: "aiPage", fileName: "aiPage", withAllLocales: true });
