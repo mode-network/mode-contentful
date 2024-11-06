@@ -110,7 +110,7 @@ const fetchEntriesAndWriteToFile = async ({
             writeToFile(sortedApps, fileName);
         } else {
             const entries = withAllLocales
-                ? await client.withAllLocales.getEntries({ content_type: contentType })
+                ? await client.withAllLocales.withoutUnresolvableLinks.getEntries({ content_type: contentType, include: 10 })
                 : await client.getEntries({ content_type: contentType });
 
             writeToFile(entries.items, fileName);
