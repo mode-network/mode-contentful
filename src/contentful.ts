@@ -46,3 +46,4 @@ fetchEntriesAndWriteToFile({ contentType: "ecosystemPage", fileName: "ecosystemP
 fetchEntriesAndWriteToFile({ contentType: "categories", fileName: "categories", withAllLocales: true });
 fetchEntriesAndWriteToFile({ contentType: "dappBanner", fileName: "dappBanner", withAllLocales: true });
 fetchEntriesAndWriteToFile({ contentType: "aiSections", fileName: "aiSections", withAllLocales: true });
+fetchEntriesAndWriteToFile({ contentType: "governanceCalendar", fileName: "governanceCalendar", withAllLocales: true });
