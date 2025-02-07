@@ -50,4 +50,4 @@ fetchEntriesAndWriteToFile({ contentType: "dappBanner", fileName: "dappBanner", 
 fetchEntriesAndWriteToFile({ contentType: "aiSections", fileName: "aiSections", withAllLocales: true });
 fetchEntriesAndWriteToFile({ contentType: "governanceCalendar", fileName: "governanceCalendar", withAllLocales: true });
 fetchEntriesAndWriteToFile({ contentType: "stakingRewards", fileName: "stakingRewards", withAllLocales: true });
-fetchEntriesAndWriteToFile({ contentType: "suggestions", fileName: "suggestions", withAllLocales: true });
+fetchEntriesAndWriteToFile({ contentType: "suggestions", fileName: "suggestions" });
