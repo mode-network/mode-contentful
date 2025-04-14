@@ -51,3 +51,4 @@ fetchEntriesAndWriteToFile({ contentType: "aiSections", fileName: "aiSections", 
 fetchEntriesAndWriteToFile({ contentType: "governanceCalendar", fileName: "governanceCalendar", withAllLocales: true });
 fetchEntriesAndWriteToFile({ contentType: "stakingRewards", fileName: "stakingRewards", withAllLocales: true });
 fetchEntriesAndWriteToFile({ contentType: "suggestions", fileName: "suggestions" });
+fetchEntriesAndWriteToFile({ contentType: "aiTerminalWhitelistedWallets", fileName: "aiTerminalWhitelistedWallets"});
