@@ -52,4 +52,4 @@ fetchEntriesAndWriteToFile({ contentType: "governanceCalendar", fileName: "gover
 fetchEntriesAndWriteToFile({ contentType: "stakingRewards", fileName: "stakingRewards", withAllLocales: true });
 fetchEntriesAndWriteToFile({ contentType: "suggestions", fileName: "suggestions" });
 fetchEntriesAndWriteToFile({ contentType: "aiTerminalWhitelistedWallets", fileName: "aiTerminalWhitelistedWallets"});
-fetchEntriesAndWriteToFile({ contentType: "discoverPageItem", fileName: "discoverPageItem"});
+fetchEntriesAndWriteToFile({ contentType: "discoverPage", fileName: "discoverPage"});
