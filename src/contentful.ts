@@ -53,3 +53,4 @@ fetchEntriesAndWriteToFile({ contentType: "stakingRewards", fileName: "stakingRe
 fetchEntriesAndWriteToFile({ contentType: "suggestions", fileName: "suggestions" });
 fetchEntriesAndWriteToFile({ contentType: "aiTerminalWhitelistedWallets", fileName: "aiTerminalWhitelistedWallets"});
 fetchEntriesAndWriteToFile({ contentType: "discoverPage", fileName: "discoverPage"});
+fetchEntriesAndWriteToFile({ contentType: "campaign", fileName: "campaign" });
