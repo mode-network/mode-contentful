@@ -25,7 +25,7 @@ const fetchEntriesAndWriteToFile = async ({
     withAllLocales?: boolean;
 }) => {
     const params = { content_type: contentType, include: 10, limit: 1000 };
-    
+
     try {
         const entries = withAllLocales
             ? await client.withAllLocales.withoutUnresolvableLinks.getEntries(params)
@@ -47,9 +47,9 @@ fetchEntriesAndWriteToFile({ contentType: "seasonalBanners", fileName: "seasonal
 fetchEntriesAndWriteToFile({ contentType: "ecosystemPage", fileName: "ecosystemPage", withAllLocales: true });
 fetchEntriesAndWriteToFile({ contentType: "categories", fileName: "categories", withAllLocales: true });
 fetchEntriesAndWriteToFile({ contentType: "dappBanner", fileName: "dappBanner", withAllLocales: true });
-fetchEntriesAndWriteToFile({ contentType: "aiSections", fileName: "aiSections", withAllLocales: true });
 fetchEntriesAndWriteToFile({ contentType: "governanceCalendar", fileName: "governanceCalendar", withAllLocales: true });
 fetchEntriesAndWriteToFile({ contentType: "stakingRewards", fileName: "stakingRewards", withAllLocales: true });
 fetchEntriesAndWriteToFile({ contentType: "suggestions", fileName: "suggestions" });
-fetchEntriesAndWriteToFile({ contentType: "aiTerminalWhitelistedWallets", fileName: "aiTerminalWhitelistedWallets"});
-fetchEntriesAndWriteToFile({ contentType: "discoverPageItem", fileName: "discoverPageItem"});
+fetchEntriesAndWriteToFile({ contentType: "aiTerminalWhitelistedWallets", fileName: "aiTerminalWhitelistedWallets" });
+fetchEntriesAndWriteToFile({ contentType: "discoverPage", fileName: "discoverPage" });
+fetchEntriesAndWriteToFile({ contentType: "campaign", fileName: "campaign" });
