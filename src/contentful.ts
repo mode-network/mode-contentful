@@ -42,7 +42,6 @@ fetchEntriesAndWriteToFile({ contentType: "thirdPartyBridge", fileName: "thirdPa
 fetchEntriesAndWriteToFile({ contentType: "faqItem", fileName: "faqItemWithAllLocales", withAllLocales: true });
 fetchEntriesAndWriteToFile({ contentType: "localizedString", fileName: "localizedStrings", withAllLocales: true });
 fetchEntriesAndWriteToFile({ contentType: "news", fileName: "news", withAllLocales: true });
-fetchEntriesAndWriteToFile({ contentType: "guides", fileName: "guides", withAllLocales: true });
 fetchEntriesAndWriteToFile({ contentType: "seasonalBanners", fileName: "seasonalBanners", withAllLocales: true });
 fetchEntriesAndWriteToFile({ contentType: "ecosystemPage", fileName: "ecosystemPage", withAllLocales: true });
 fetchEntriesAndWriteToFile({ contentType: "categories", fileName: "categories", withAllLocales: true });
