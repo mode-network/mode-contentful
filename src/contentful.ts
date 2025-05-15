@@ -55,3 +55,4 @@ fetchEntriesAndWriteToFile({ contentType: "campaign", fileName: "campaign" });
 fetchEntriesAndWriteToFile({ contentType: "synthDiscordLink", fileName: "synthDiscordLink" });
 fetchEntriesAndWriteToFile({ contentType: "streamersBanners", fileName: "streamersBanners" });
 fetchEntriesAndWriteToFile({ contentType: "streamersVideos", fileName: "streamersVideos" });
+fetchEntriesAndWriteToFile({ contentType: "streamersNextStreamDate", fileName: "streamersNextStreamDate" });
