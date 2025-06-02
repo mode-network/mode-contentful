@@ -42,7 +42,6 @@ fetchEntriesAndWriteToFile({ contentType: "localizedString", fileName: "localize
 fetchEntriesAndWriteToFile({ contentType: "news", fileName: "news", withAllLocales: true });
 fetchEntriesAndWriteToFile({ contentType: "seasonalBanners", fileName: "seasonalBanners", withAllLocales: true });
 fetchEntriesAndWriteToFile({ contentType: "ecosystemPage", fileName: "ecosystemPage", withAllLocales: true });
-fetchEntriesAndWriteToFile({ contentType: "dappBanner", fileName: "dappBanner", withAllLocales: true });
 fetchEntriesAndWriteToFile({ contentType: "governanceCalendar", fileName: "governanceCalendar", withAllLocales: true });
 fetchEntriesAndWriteToFile({ contentType: "suggestions", fileName: "suggestions" });
 fetchEntriesAndWriteToFile({ contentType: "aiTerminalWhitelistedWallets", fileName: "aiTerminalWhitelistedWallets" });
