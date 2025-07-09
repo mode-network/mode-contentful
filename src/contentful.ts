@@ -15,6 +15,32 @@ const writeToFile = (data: unknown, fileName: string) => {
     fs.writeFileSync(`${fileName}.json`, JSON.stringify(data, null, 2));
 };
 
+// Function to filter out draft entries (entries without fields property)
+const filterOutDrafts = (items: any[]): any[] => {
+    return items.map(item => {
+        if (item.fields) {
+            const filteredFields: any = {};
+            
+            for (const [key, value] of Object.entries(item.fields)) {
+                if (Array.isArray(value)) {
+                    // Filter out draft entries from arrays of linked entries
+                    filteredFields[key] = value.filter((linkedItem: any) => {
+                        // Keep only entries that have fields (published entries)
+                        return linkedItem.fields || (linkedItem.sys && linkedItem.sys.publishedVersion);
+                    });
+                } else {
+                    // Keep non-array fields as is
+                    filteredFields[key] = value;
+                }
+            }
+            
+            return { ...item, fields: filteredFields };
+        }
+        
+        return item;
+    });
+};
+
 const fetchEntriesAndWriteToFile = async ({
     contentType,
     fileName,
@@ -31,8 +57,11 @@ const fetchEntriesAndWriteToFile = async ({
             ? await client.withAllLocales.withoutUnresolvableLinks.getEntries(params)
             : await client.getEntries(params);
 
-        writeToFile(entries.items, fileName);
-        console.log(`Entries successfully written to ${fileName}.json`);
+        // Filter out draft entries (entries without fields property)
+        const filteredItems = filterOutDrafts(entries.items);
+        
+        writeToFile(filteredItems, fileName);
+        console.log(`Entries successfully written to ${fileName}.json (drafts filtered out)`);
     } catch (error) {
         console.error(`Error fetching entries. Content type: ${contentType}`, error);
     }
