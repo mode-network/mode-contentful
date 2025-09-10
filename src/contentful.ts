@@ -80,3 +80,4 @@ fetchEntriesAndWriteToFile({ contentType: "synthDiscordLink", fileName: "synthDi
 fetchEntriesAndWriteToFile({ contentType: "streamersBanners", fileName: "streamersBanners" });
 fetchEntriesAndWriteToFile({ contentType: "streamersVideos", fileName: "streamersVideos" });
 fetchEntriesAndWriteToFile({ contentType: "streamersNextStreamDate", fileName: "streamersNextStreamDate" });
+fetchEntriesAndWriteToFile({ contentType: "tradingStrategy", fileName: "tradingStrategy" });
