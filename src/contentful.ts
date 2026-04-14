@@ -78,3 +78,4 @@ fetchEntriesAndWriteToFile({ contentType: "discoverPage", fileName: "discoverPag
 fetchEntriesAndWriteToFile({ contentType: "campaign", fileName: "campaign" });
 fetchEntriesAndWriteToFile({ contentType: "synthDiscordLink", fileName: "synthDiscordLink" });
 fetchEntriesAndWriteToFile({ contentType: "tradingStrategy", fileName: "tradingStrategy" });
+fetchEntriesAndWriteToFile({ contentType: "researchArticle", fileName: "researchArticle" });
